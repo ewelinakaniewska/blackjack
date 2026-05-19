@@ -1,19 +1,20 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Klasyczna Gra Blackjack (Blackjack Web Game) 
+Interaktywna gra karciana w przeglądarce, stworzona w czystym **JavaScript (Vanilla JS)**, **HTML5** i **CSS3** w środowisku **Vite**.
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+https://startling-scone-dedf23.netlify.app/
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Fullstack Developer Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+---
 
-- [Our courses](https://scrimba.com/courses)
-- [The Frontend Career Path](https://scrimba.com/fullstack-path-c0fullstack)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## Funkcjonalności i logika gry
 
-Happy Coding!
+* **Losowanie kart:** System przypisuje wartość 10 dla figur (Walet, Dama, Król) oraz 11 dla Asa.
+* **Zarządzanie stanem (Game State):** Dynamiczne sprawdzanie warunków wygranej (Blackjack = 21) lub przegranej (Suma > 21).
+* **Guard Clauses:** Zabezpieczenie przed dobieraniem kart po zakończeniu gry (`isAlive`, `hasBlackJack`).
+
+## Zastosowane koncepty JS & CSS
+
+* **Vanilla JS:** Obiekty (dane gracza), tablice (`cards.push()`), pętla `for` (renderowanie kart) oraz instrukcje warunkowe.
+* **ES6 Modules:** Świadome użycie obiektu `window` do upublicznienia funkcji ze skryptu modułowego dla zdarzeń `onclick`.
+* **CSS3:** Stylizacja stylizowana na stół kasynowy z dopasowaniem tła (`background-size: cover`).
+
+---
